@@ -10,254 +10,219 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap nav">
+  <header class="topbar">
+    <div class="wrap topbar-inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true">HK</div>
-        <div>
+        <div class="mark" aria-hidden="true">HK</div>
+        <div class="brand-text">
           <div class="brand-name">Hiraben Kodarbhai Foundation</div>
           <div class="brand-tag">Legacy in action. Community first.</div>
         </div>
       </div>
 
-      <nav class="links" aria-label="Primary">
-        <a href="#mission">Mission</a>
-        <a href="#programs">Programs</a>
-        <a href="#impact">Impact</a>
-        <a href="#involved">Get involved</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#impact">Your impact</a>
+        <a href="#focus">Focus areas</a>
+        <a href="#stories">Stories</a>
+        <a href="#contact">Contact</a>
         <a class="btn small" href="#donate">Donate</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
+    <!-- HERO (Kennedy-style: big image + overlay + title + short pitch + CTA) -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-overlay"></div>
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <h1>Giving back with purpose.</h1>
+          <div class="breadcrumb">Foundation / Your impact</div>
+          <h1>The impact of your support</h1>
           <p class="lead">
             Built on the kindness our grandparents showed, we give back by supporting local communities
             through care, service, and shared opportunity.
           </p>
-          <div class="hero-cta">
-            <a class="btn" href="#donate">Donate</a>
-            <a class="btn outline" href="#involved">Volunteer</a>
-          </div>
-          <div class="pill-row" aria-label="Focus areas">
-            <span class="pill">Community support</span>
-            <span class="pill">Youth and education</span>
-            <span class="pill">Local partnerships</span>
+          <div class="hero-actions">
+            <a class="btn" href="#donate">Donate today</a>
+            <a class="btn outline" href="#focus">Learn more</a>
           </div>
         </div>
 
-        <div class="hero-card" aria-label="Quick facts">
-          <div class="card">
-            <h2 class="card-title">What we do</h2>
-            <p class="card-text">
-              We support practical, community driven projects that help families, students, and local organizations.
+        <aside class="hero-card" id="donate" aria-label="Donate panel">
+          <div class="panel">
+            <h2>Your gift today</h2>
+            <ul class="bullets">
+              <li>Supports local families through direct community help</li>
+              <li>Strengthens youth and education initiatives</li>
+              <li>Funds community driven projects and partnerships</li>
+              <li>Turns gratitude into consistent local impact</li>
+            </ul>
+            <a class="btn full" href="https://www.paypal.com" target="_blank" rel="noreferrer">Donate now</a>
+            <p class="fine">
+              Replace the donate link later with your PayPal, Stripe, or donor platform.
             </p>
-            <div class="stats">
-              <div class="stat">
-                <div class="stat-num">3</div>
-                <div class="stat-label">Core focus areas</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">2</div>
-                <div class="stat-label">Community regions</div>
-              </div>
-              <div class="stat">
-                <div class="stat-num">100%</div>
-                <div class="stat-label">Local impact</div>
-              </div>
-            </div>
           </div>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <section id="mission" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Our mission</h2>
-          <p>
-            We turn gratitude into meaningful and lasting impact by supporting local communities through care,
-            service, and shared opportunity.
-          </p>
-        </div>
-
-        <div class="grid3">
-          <div class="tile">
-            <h3>Care</h3>
-            <p>Support for basic needs, community relief, and direct assistance when it matters most.</p>
-          </div>
-          <div class="tile">
-            <h3>Service</h3>
-            <p>Hands on involvement with local partners and community organizations.</p>
-          </div>
-          <div class="tile">
-            <h3>Opportunity</h3>
-            <p>Programs that expand access to education, mentorship, and resources for long term growth.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="programs" class="section alt">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Programs</h2>
-          <p>
-            These are starter program areas. You can rename them to match what you actually fund.
-          </p>
-        </div>
-
-        <div class="grid3">
-          <div class="tile">
-            <div class="chip">Youth</div>
-            <h3>Student support</h3>
-            <p>Scholarships, school supply drives, exam fee support, and mentorship initiatives.</p>
-            <ul class="list">
-              <li>Scholarships and micro grants</li>
-              <li>Supplies and learning resources</li>
-              <li>Career and college readiness</li>
-            </ul>
-          </div>
-
-          <div class="tile">
-            <div class="chip">Community</div>
-            <h3>Local relief</h3>
-            <p>Help for families facing short term hardship through trusted community partners.</p>
-            <ul class="list">
-              <li>Food and essentials</li>
-              <li>Emergency support</li>
-              <li>Seasonal community drives</li>
-            </ul>
-          </div>
-
-          <div class="tile">
-            <div class="chip">Partnerships</div>
-            <h3>Community projects</h3>
-            <p>Funding and volunteer support for local projects that strengthen neighborhoods.</p>
-            <ul class="list">
-              <li>Nonprofit partnerships</li>
-              <li>Community events</li>
-              <li>Small project sponsorships</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- IMPACT STATS -->
     <section id="impact" class="section">
       <div class="wrap">
         <div class="section-head">
-          <h2>Impact</h2>
-          <p>Add real numbers here as soon as you have them. Until then, keep it simple and honest.</p>
+          <h2>Your impact</h2>
+          <p>Start simple. Replace these with real numbers as soon as you have them.</p>
         </div>
 
-        <div class="impact">
-          <div class="impact-card">
-            <div class="impact-num" id="year">2025</div>
-            <div class="impact-label">Founded</div>
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num" id="yearFounded">2025</div>
+            <div class="stat-label">Founded</div>
           </div>
-          <div class="impact-card">
-            <div class="impact-num">0</div>
-            <div class="impact-label">Grants awarded so far</div>
+          <div class="stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">Families supported</div>
           </div>
-          <div class="impact-card">
-            <div class="impact-num">0</div>
-            <div class="impact-label">Volunteer hours so far</div>
+          <div class="stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">Grants awarded</div>
           </div>
-          <div class="impact-card">
-            <div class="impact-num">0</div>
-            <div class="impact-label">Families supported so far</div>
+          <div class="stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">Volunteer hours</div>
           </div>
         </div>
-
-        <p class="note">
-          Tip: Replace the zeros with real stats once you start. Even small numbers look credible if they are true.
-        </p>
       </div>
     </section>
 
-    <section id="involved" class="section alt">
+    <!-- FOCUS AREAS (like “Patient care / Research / Community initiatives” blocks) -->
+    <section id="focus" class="section alt">
       <div class="wrap">
         <div class="section-head">
-          <h2>Get involved</h2>
-          <p>Want to help? Here are a few ways to support the mission.</p>
+          <h2>Focus areas</h2>
+          <p>Clear categories make your foundation look real and trustworthy.</p>
         </div>
 
         <div class="grid3">
-          <div class="tile">
-            <h3>Volunteer</h3>
-            <p>Join local events, drives, or partner projects when opportunities come up.</p>
-            <a class="link" href="#contact">Volunteer interest form</a>
-          </div>
-          <div class="tile">
-            <h3>Partner</h3>
-            <p>We collaborate with trusted local groups and community leaders.</p>
-            <a class="link" href="#contact">Partnership inquiry</a>
-          </div>
-          <div class="tile">
-            <h3>Share</h3>
-            <p>Help spread the word by sharing our mission and upcoming initiatives.</p>
-            <a class="link" href="#contact">Media and outreach</a>
-          </div>
+          <article class="card">
+            <div class="card-top">
+              <div class="chip">Care</div>
+              <h3>Community support</h3>
+            </div>
+            <p>
+              We help families with practical support through trusted partners and local initiatives.
+            </p>
+            <ul class="mini">
+              <li>Food and essentials</li>
+              <li>Seasonal relief drives</li>
+              <li>Emergency assistance</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="chip">Opportunity</div>
+              <h3>Youth and education</h3>
+            </div>
+            <p>
+              We support students and youth programs that create long term opportunity.
+            </p>
+            <ul class="mini">
+              <li>Scholarships and micro grants</li>
+              <li>School supply support</li>
+              <li>Mentorship and readiness</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="chip">Service</div>
+              <h3>Community projects</h3>
+            </div>
+            <p>
+              We fund and participate in community driven projects that strengthen neighborhoods.
+            </p>
+            <ul class="mini">
+              <li>Local partnerships</li>
+              <li>Community events</li>
+              <li>Small project sponsorships</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="donate" class="section donate">
-      <div class="wrap donate-inner">
-        <div>
-          <h2>Donate</h2>
-          <p>
-            Your contribution helps fund direct support, education initiatives, and community projects.
-            Link this button to PayPal, Stripe, or your donor platform when you are ready.
-          </p>
-          <div class="donate-actions">
-            <a class="btn" href="https://www.paypal.com" target="_blank" rel="noreferrer">Donate now</a>
-            <a class="btn outline" href="#contact">Ask about giving</a>
-          </div>
-          <p class="fine">
-            This site can be updated anytime. Donations should go through an official payment processor.
-          </p>
+    <!-- “MEET SOME INCREDIBLE…” STYLE STORIES GRID -->
+    <section id="stories" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Stories</h2>
+          <p>When you have real stories, add names and photos. For now, use placeholders.</p>
         </div>
 
-        <div class="tile donate-tile">
-          <h3>Where your donation goes</h3>
-          <ul class="list">
-            <li>Direct assistance through vetted partners</li>
-            <li>Youth and education support</li>
-            <li>Community projects and local events</li>
-          </ul>
+        <div class="story-grid">
+          <article class="story">
+            <div class="story-img" aria-hidden="true"></div>
+            <div class="story-body">
+              <h3>Meet a future scholarship recipient</h3>
+              <p>A short story about a student helped through supplies, fees, or mentorship.</p>
+              <a class="link" href="#contact">Share a story</a>
+            </div>
+          </article>
+
+          <article class="story">
+            <div class="story-img" aria-hidden="true"></div>
+            <div class="story-body">
+              <h3>A community relief drive</h3>
+              <p>A short story about a local drive that supported families with essentials.</p>
+              <a class="link" href="#contact">Get involved</a>
+            </div>
+          </article>
+
+          <article class="story">
+            <div class="story-img" aria-hidden="true"></div>
+            <div class="story-body">
+              <h3>A neighborhood partnership</h3>
+              <p>A short story about partnering with a community organization for impact.</p>
+              <a class="link" href="#contact">Partner with us</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-band">
+          <div>
+            <div class="cta-title">Open a world of possibilities for local communities.</div>
+            <div class="cta-sub">Your support helps fund care, service, and shared opportunity.</div>
+          </div>
+          <a class="btn" href="#donate">Donate today</a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
       <div class="wrap">
         <div class="section-head">
           <h2>Contact</h2>
-          <p>Add your real contact info here. If you do not have an org email yet, use a Gmail for now.</p>
+          <p>Add your real info here. Use a Gmail temporarily if needed.</p>
         </div>
 
         <div class="contact-grid">
-          <div class="tile">
+          <div class="contact-card">
             <h3>Email</h3>
             <p><a class="link" href="mailto:info@hirabenkodarbhaifoundation.org">info@hirabenkodarbhaifoundation.org</a></p>
             <p class="fine">Replace with your real email when ready.</p>
           </div>
-          <div class="tile">
+          <div class="contact-card">
             <h3>Community regions</h3>
             <p>Iowa</p>
             <p>Ohio</p>
           </div>
-          <div class="tile">
-            <h3>Social</h3>
-            <p class="fine">Add links later:</p>
-            <p><a class="link" href="#" onclick="return false;">Instagram</a></p>
-            <p><a class="link" href="#" onclick="return false;">Facebook</a></p>
+          <div class="contact-card">
+            <h3>Ways to help</h3>
+            <p><a class="link" href="#donate">Donate</a></p>
+            <p><a class="link" href="#contact">Volunteer</a></p>
+            <p><a class="link" href="#contact">Partner</a></p>
           </div>
         </div>
       </div>
