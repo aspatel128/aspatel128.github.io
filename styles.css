@@ -108,12 +108,6 @@ a{ color: inherit; }
   gap: 22px;
 }
 
-/* Hide old layout containers if they exist */
-.nav-left,
-.donate-row{
-  display: none !important;
-}
-
 /* Nav links (no pills) */
 .nav{
   display: flex;
