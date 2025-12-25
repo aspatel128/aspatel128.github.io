@@ -477,3 +477,60 @@ main > :first-child{
   .logo-img{ height: 100px; }
   .nav{ gap: 16px; }
 }
+
+
+/* ===========================
+   DONATE PAGE — FIX “CROWDED TOP / EMPTY BOTTOM”
+   Paste at VERY BOTTOM of styles.css
+   =========================== */
+
+/* 1) Stop grid from stretching cards to equal height */
+.grid3.donate-grid{
+  align-items: start;     /* KEY: removes the empty bottom space */
+  gap: 26px;              /* more space between cards */
+  margin-top: 22px;
+}
+
+/* 2) Make spacing inside each card cleaner */
+.grid3.donate-grid > .card.donate-card{
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;              /* space between chunks */
+}
+
+/* 3) Tighten/normalize the text spacing so it feels balanced */
+.grid3.donate-grid > .card.donate-card .card-top{
+  margin-bottom: 6px;
+}
+
+.grid3.donate-grid > .card.donate-card p{
+  margin: 0;              /* remove default paragraph bottom spacing */
+  color: var(--muted);
+}
+
+/* 4) Button spacing */
+.grid3.donate-grid > .card.donate-card .btn{
+  margin-top: 10px;
+}
+
+/* If you have a “fine” line under the main button, keep it close */
+.grid3.donate-grid > .card.donate-card .fine{
+  margin-top: 8px;
+}
+
+/* 5) Cash App panel spacing */
+.grid3.donate-grid > .card.donate-card .panel{
+  margin: 10px 0 0;
+}
+
+/* Mobile */
+@media (max-width: 980px){
+  .grid3.donate-grid{
+    gap: 20px;
+  }
+  .grid3.donate-grid > .card.donate-card{
+    padding: 22px;
+    gap: 10px;
+  }
+}
