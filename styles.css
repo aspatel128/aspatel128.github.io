@@ -71,21 +71,13 @@ a{ color: inherit; }
 
 .header-grid{
   display:grid;
-  grid-template-columns: minmax(140px,220px) auto minmax(140px,220px);
-  grid-template-rows: auto auto;
+  grid-template-columns: minmax(120px,180px) auto minmax(120px,180px);
+  gap: 10px 8px; /* smaller horizontal gap */
   align-items:center;
-  gap: 12px 14px;
-  padding: 16px 0;
 }
 
 /* Nav positioning */
-.nav-left{
-  grid-column:1;
-  grid-row:1;
-  display:flex;
-  justify-content:flex-end;
-  padding-right: 18px;
-}
+.nav-left{ justify-content: flex-end; padding-right: 6px; }
 
 .brand-center{
   grid-column:2;
@@ -94,13 +86,7 @@ a{ color: inherit; }
   justify-content:center;
 }
 
-.nav-right{
-  grid-column:3;
-  grid-row:1;
-  display:flex;
-  justify-content:flex-start;
-  padding-left: 18px;
-}
+.nav-right{ justify-content: flex-start; padding-left: 6px; }
 
 /* Donate row */
 .donate-row{
