@@ -544,3 +544,152 @@ a{ color: inherit; text-decoration: none; }
   .timeline-item{ grid-template-columns: 42px 1fr; }
   .timeline-cta{ flex-direction: column; align-items: flex-start; }
 }
+
+/* =========================
+   STORIES: PAGE HERO + TIMELINE
+   (Safe additions — does not rewrite existing styles)
+   ========================= */
+
+.page-hero{
+  background: #efe6d5;          /* same warm band vibe */
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  padding: 40px 0;
+}
+
+.page-hero-inner h1{
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(34px, 4vw, 50px);
+  color: #0b2c55;
+  letter-spacing: -0.02em;
+}
+
+.page-hero-sub{
+  margin: 0;
+  max-width: 70ch;
+  color: rgba(0,0,0,.72);
+  font-size: 16px;
+}
+
+/* Timeline wrapper */
+.timeline-section{
+  padding: 46px 0 60px;
+  background: #fff;
+}
+
+.timeline{
+  position: relative;
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
+/* Vertical line */
+.timeline::before{
+  content:"";
+  position:absolute;
+  left: 9px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(11,44,85,.18);
+  border-radius: 2px;
+}
+
+.t-item{
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+/* Dot */
+.t-marker{
+  width: 18px;
+  height: 18px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: #0b2c55;
+  box-shadow: 0 0 0 4px rgba(11,44,85,.12);
+}
+
+/* Card */
+.t-card{
+  background: #fbf7ee;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.06);
+}
+
+.t-date{
+  display: inline-block;
+  font-weight: 800;
+  color: rgba(11,44,85,.92);
+  background: rgba(11,44,85,.08);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: .02em;
+  margin-bottom: 10px;
+}
+
+.t-title{
+  margin: 0 0 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #0b2c55;
+  letter-spacing: -0.01em;
+}
+
+.t-text{
+  margin: 0;
+  color: rgba(0,0,0,.72);
+}
+
+/* Soft accent CTA band */
+.soft-accent-band{
+  margin-top: 24px;
+  background: #efe6d5;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  padding: 18px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.soft-accent-title{
+  font-weight: 900;
+  color: #0b2c55;
+  margin-bottom: 4px;
+}
+
+.soft-accent-sub{
+  color: rgba(0,0,0,.68);
+}
+
+/* Animations */
+@media (prefers-reduced-motion: no-preference){
+  .t-card{
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp .55s ease forwards;
+  }
+  .t-item:nth-child(2) .t-card{ animation-delay: .06s; }
+  .t-item:nth-child(3) .t-card{ animation-delay: .12s; }
+  .t-item:nth-child(4) .t-card{ animation-delay: .18s; }
+}
+
+@keyframes fadeUp{
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 720px){
+  .timeline{ padding-left: 18px; }
+  .timeline::before{ left: 7px; }
+  .t-item{ grid-template-columns: 18px 1fr; }
+  .t-marker{ width: 14px; height: 14px; }
+}
