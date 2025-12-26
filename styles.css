@@ -228,8 +228,7 @@ a{ color: inherit; text-decoration: none; }
   padding: 44px 0 54px;
   /* softer accent bar feel */
   background:
-    linear-gradient(to bottom, var(--softbar), var(--softbar)) top / 100% 120px no-repeat,
-    var(--cream-2);
+ var(--cream-2);
 }
 
 .section-title{
