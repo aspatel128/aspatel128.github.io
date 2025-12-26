@@ -87,7 +87,7 @@ a{ color: inherit; text-decoration: none; }
 
 /* bigger logo (per your request) */
 .logo img{
-  height: 96px; /* was smaller; adjust if you want more */
+  height: 175px; /* was smaller; adjust if you want more */
   width: auto;
 }
 
