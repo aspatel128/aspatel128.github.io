@@ -757,3 +757,22 @@ a{ color: inherit; text-decoration: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Make donation tiles feel more action-oriented */
+.donate-page .goal-card p:last-child {
+  margin-bottom: 18px;
+}
+
+/* Center logos inside tiles */
+.donate-page .goal-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Normalize logo sizing */
+.donate-page .goal-img img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
